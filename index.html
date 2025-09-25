@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnidialDesigne - Building Tomorrow's Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+            <!-- Bootstrap Icons--> 
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container navbar">
+            <a href="#home" class="logo">AnidialDesigne</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Main</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Program</a></li>
+                <li><a href="#ai-consultant">AI Consultation</a></li>
+                <li><a href="#pricing">Price</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+          <div class="header-icons">
+                 <a href="#"><i class="bi bi-briefcase-fill"></i></i></a>
+                 <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                 <a href="#"><i class="bi bi-linkedin"></i></i></a>
+                 <a href="#"><i class="bi bi-instagram"></i></i></a>    
+
+
+            </div>  
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content container fade-in">
+                <h1>Building Tomorrow's Software, Today.</h1>
+                <p>We leverage cutting-edge AI and expert engineering to craft bespoke digital solutions that drive growth and innovation.
+                </p>
+                <div>
+                    <a href="#pricing" class="btn btn-primary">Order</a>
+                    <a href="#services" class="btn btn-secondary">learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We offer a complete suite of digital services to bring your vision to life.</p>
+                
+                <div class="services-grid" >
+                    <a href="#" class="service-card web fade-in">
+                    <div class="service-card web fade-in">
+                        <div class="icon"><i class="bi bi-code"></i>
+                        <h3>Web & App Development</h3>
+                        <p>Building responsive, high-performance websites and mobile applications tailored to your business needs.</p>
+                    </div> </div></a> 
+                    <a href="#" class="service-card cloud fade-in">
+                    <div class="service-card cloud fade-in">
+                        <div class="icon"><i class="bi bi-cloud-fill"></i>
+                        <h3>Cloud</h3>
+                        <p>Architecting scalable cloud infrastructure and automating workflows to accelerate your development lifecycle</p>
+                        
+                    </div></div></a>
+                    <a href="#" class="service-card design fade-in">
+                    <div class="service-card design fade-in">
+                        <div class="icon"><i class="bi bi-brush-fill"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating intuitive and beautiful user interfaces that provide an exceptional user experience and drive engagement.</p>
+                    </div></div></a>
+                    <a href="#" class="service-card ai fade-in">
+                    <div class="service-card ai fade-in">
+                        <div class="icon"><i class="bi bi-anthropic"></i>
+                        <h3>Al Integration</h3>
+                        <p>Leveraging artificial intelligence and machine learning to build smart features and unlock data-driven insights.</p>
+                    </div></div></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Consultant Section -->
+        <section id="ai-consultant" class="section">
+            <div >
+                <h2 class="section-title">Consult your project with artificial intelligence ✨</h2>
+                <p class="section-subtitle">Do you have an idea? Describe it below and get a free AI-generated initial project plan.</p>
+                <div class="project-idea">
+                <textarea id="project-idea" placeholder="Example: I want to create a healthy food delivery mobile app in my city, targeting busy employees..."></textarea>
+                <button id="generate-plan-btn" class="btn btn-primary">Get the project plan</button>
+                </div>
+                <div id="loading-spinner" style="display: none;"></div>
+                <div id="ai-response-container" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section">
+            <div class="container">
+                <h2 class="section-title">Flexible Pricing for Any Project</h2>
+                <p class="section-subtitle">Choose the package that suits your needs and project requirements.</p>
+                <div class="pricing-grid">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card fade-in">
+                        <h3>STARTER</h3>
+                        <p class="price">499$<span>/Month</span></p>
+                        <ul class="features">
+                            <li><i class="bi bi-check-circle"></i></i>1 Website or App</li>
+                            <li><i class="bi bi-check-circle"></i></i>UI/UX Design Induded</li>
+                            <li><i class="bi bi-check-circle"></i></i>Basic SEO</li>
+                            <li><i class="bi bi-check-circle"></i></i>Weekly Updates</li>
+                            <li><i class="bi bi-check-circle"></i></i>Email Support</li>
+                        </ul>
+                        <button class="btn-subscribe">Subscribe Now</button>
+                    </div>
+                    <!-- Business Plan (Featured) -->
+                    <div class="pricing-card fade-in">
+                        <h3>BUSINESS</h3>
+                        <p class="price">1299$<span>/Month</span></p>
+                        <ul class="features">
+                            <li><i class="bi bi-check-circle"></i></i>Up to 3 Projets</li>
+                            <li><i class="bi bi-check-circle"></i></i>Advanced UVUX</li>
+                            <li><i class="bi bi-check-circle"></i></i>Full SEO Package</li>
+                            <li><i class="bi bi-check-circle"></i></i>CMS Integration</li>
+                            <li><i class="bi bi-check-circle"></i></i>Priority Support</li>
+                             <li><i class="bi bi-check-circle"></i></i>Cloud Deployment</li>
+                             
+                        </ul>
+                        <button class="btn-subscribe">Subscribe Now</button>
+                    </div>
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card fade-in">
+                        <h3>ENTERPRISE</h3>
+                        <p class="price">Contact US<span>/Month</span></p>
+                        <ul class="features">
+                            <li><i class="bi bi-check-circle"></i></i>Unlimited Projectsp to 3 Projets</li>
+                            <li><i class="bi bi-check-circle"></i></i>Dedicated Team</li>
+                            <li><i class="bi bi-check-circle"></i></i>AN & ML Integration</li>
+                            <li><i class="bi bi-check-circle"></i></i>24/7 Support</li>
+                            <li><i class="bi bi-check-circle"></i></i>Custom infrastructure</li>
+                            <li><i class="bi bi-check-circle"></i></i>Dedicated Account Manager</li>
+                        </ul>
+                       <button class="btn-subscribe">Subscribe Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AnidialDesigne.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript Code
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Mobile Menu Toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+            
+            // Close menu when a link is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+
+            // Active link highlighting on scroll
+            const sections = document.querySelectorAll('section');
+            const navLi = document.querySelectorAll('.nav-links a');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLi.forEach(a => {
+                    a.classList.remove('active');
+                    if (a.getAttribute('href').includes(current)) {
+                        a.classList.add('active');
+                    }
+                });
+            });
+
+            // Fade-in animation on scroll
+            const faders = document.querySelectorAll('.fade-in');
+            const appearOptions = {
+                threshold: 0.2,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('visible');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+
+        });
+
+        // نخدو جميع الكارت
+const serviceCards = document.querySelectorAll('.service-card');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // نضيف class visible
+    }
+  });
+}, {
+  threshold: 0.2 // 20% من الكارت خاصو يبان قبل ما يشتغل animation
+});
+
+// نطبق observer على كل كارت
+serviceCards.forEach(card => observer.observe(card));
+
+    </script>
+
+</body>
+</html>
