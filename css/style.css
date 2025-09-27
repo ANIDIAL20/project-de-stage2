@@ -274,22 +274,25 @@
         /* --- Pricing Section --- */
        .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(3, 360px); 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
     justify-content: center;
-    padding: 40px 0; 
+    padding: 40px 0;
 }
 
 .pricing-card {
-    width: 400px;
+    width: 100%;
+    max-width: 360px;
     height: 640px;
     background-color: var(--secondary-color);
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    display: flex;           
-    flex-direction: column; 
-    justify-content: space-between; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 40px;
     box-sizing: border-box;
+
 
     /* new code */
     display: flex;
